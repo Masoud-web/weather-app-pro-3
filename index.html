@@ -8,11 +8,54 @@
     <title>Weather App Pro</title>
 
     <link rel="stylesheet" href="style.css">
-</head>
-
 <body>
 
-    <h1>Weather App Pro</h1>
+    <div class="weather-app">
+
+        <h1>Weather App Pro 🌦️</h1>
+
+        <div class="search-box">
+            <input type="text" id="city" placeholder="Search for a city...">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <div class="weather-card">
+
+            <h2 id="cityName">Weather Information</h2>
+
+            <div class="weather-icon" id="weatherIcon">
+                🌤️
+            </div>
+
+            <div class="temperature">
+                <span id="temp">--</span>°C
+            </div>
+
+            <div class="weather-details">
+
+                <div>
+                    <span>💧</span>
+                    <p>Humidity</p>
+                    <strong id="humidity">--%</strong>
+                </div>
+
+                <div>
+                    <span>💨</span>
+                    <p>Wind Speed</p>
+                    <strong id="wind">-- km/h</strong>
+                </div>
+
+                <div>
+                    <span>🌡️</span>
+                    <p>Pressure</p>
+                    <strong id="pressure">-- hPa</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
 
     <script src="script.js"></script>
 
