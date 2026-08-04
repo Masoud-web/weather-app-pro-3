@@ -12,9 +12,93 @@
 
 <body>
 
-    <h1>Weather App Pro</h1>
+    <div class="container">
+
+        <header>
+            <div>
+                <h1>Weather App Pro 🌦️</h1>
+                <p>Professional Weather Application</p>
+            </div>
+
+            <div class="header-controls">
+                <select id="language">
+                    <option value="en">🇬🇧 English</option>
+                    <option value="de">🇩🇪 Deutsch</option>
+                </select>
+            </div>
+        </header>
+
+        <div class="search-section">
+            <input
+                type="text"
+                id="city"
+                placeholder="Search for a city..."
+            >
+
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <div class="weather-section">
+
+            <h2 id="cityName">Weather Information</h2>
+
+            <div class="weather-card">
+
+                <div id="weatherIcon">🌤️</div>
+
+                <div>
+                    <span id="temp">--</span>
+                    <span class="temperature-unit">°C</span>
+                </div>
+
+                <p id="weatherDescription">
+                    Search for a city to see the weather
+                </p>
+
+            </div>
+
+            <div class="weather-info">
+
+                <div class="info-card">
+                    <div class="info-icon">💧</div>
+                    <h3>Humidity</h3>
+                    <p id="humidity">--%</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">💨</div>
+                    <h3>Wind Speed</h3>
+                    <p id="wind">-- km/h</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">🌡️</div>
+                    <h3>Pressure</h3>
+                    <p id="pressure">-- hPa</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">🌤️</div>
+                    <h3>Condition</h3>
+                    <p id="condition">--</p>
+                </div>
+
+            </div>
+
+            <div class="actions">
+
+                <button id="refreshBtn">🔄 Refresh</button>
+
+                <button id="themeBtn">🌙 Dark Mode</button>
+
+            </div>
+
+        </div>
+
+    </div>
 
     <script src="script.js"></script>
+
 </body>
 
 </html>
